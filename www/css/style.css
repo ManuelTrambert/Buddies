@@ -1,1 +1,22 @@
 /* Empty. Add your own CSS if you like */
+/* GENERAL */
+
+/* DASHBOARD */
+.mainDashboardRow div:not(:first-child) {
+  margin-top:20px;
+}
+.buddiesActivity,.buddiesAvailability, .buddiesEvent, .buddiesMoney{
+  height:100px;
+  line-height: 95px;
+  text-align:center;
+  color:white;
+}
+.green{
+  background:green;
+}
+.blue{
+  background: blue;
+}
+.red{
+  background: red;
+}
