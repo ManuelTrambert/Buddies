@@ -6,8 +6,8 @@
 -->
 <ion-view view-title="{{chat.name}}">
   <ion-content class="padding">
-    <img class="col-xs-3" ng-src="{{chat.face}}">
-    <p class="col-xs-9">
+    <div class="messageAvatar col-xs-3" style="background-image:url({{chat.face}})"></div>
+    <div class="messageContent col-xs-9">
       {{chat.lastText}}
     </p>
   </ion-content>

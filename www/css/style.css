@@ -4,6 +4,9 @@
   background-size:100%;
   background-repeat: no-repeat;
 }
+.margin-top-small{
+  margin-top: 20px;
+}
 /* DASHBOARD */
 .mainDashboardRow div:not(:first-child) {
   margin-top:20px;
@@ -62,4 +65,22 @@
   position: absolute;
   right:0;
   margin-top: -1px;
+}
+/* DISCUSSION */
+.messageAvatar{
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  margin-top: 5px;
+}
+.messageContent{
+  background: #6FAFFF;
+  border-radius:5px;
+  padding-top: 8px;
+  margin-left:10px;
+  height: auto;
+  color:white;
 }

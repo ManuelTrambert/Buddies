@@ -4,6 +4,8 @@ angular.module('starter.controllers', [])
 
 .controller('calendarCtrl', function($scope) {})
 
+.controller('SignInCtrl', function($scope) {})
+
 .controller('EventsCtrl', function($scope) {})
 
 .controller('singleEventCtrl', function($scope) {})
@@ -27,6 +29,13 @@ angular.module('starter.controllers', [])
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
+})
+
+.controller('SignInCtrl', function($scope, $state) {
+  $scope.signIn = function(user) {
+    $state.go('tab.dash');
+  };
+
 })
 
 .controller('SettingsCtrl', function($scope) {
