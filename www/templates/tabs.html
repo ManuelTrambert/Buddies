@@ -10,11 +10,6 @@ navigation history that also transitions its views in and out.
     <ion-nav-view name="tab-dash"></ion-nav-view>
   </ion-tab>
 
-  <!-- Add Tab -->
-  <ion-tab title="Ajouter" icon-off="ion-plus" icon-on="ion-plus" href="#/tab/add">
-    <ion-nav-view name="tab-add"></ion-nav-view>
-  </ion-tab>
-
   <!-- Account Tab -->
   <ion-tab title="Événements" icon-off="ion-calendar" icon-on="ion-calendar" href="#/tab/events">
     <ion-nav-view name="tab-events"></ion-nav-view>
@@ -24,5 +19,11 @@ navigation history that also transitions its views in and out.
   <ion-tab title="Discussions" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/chats">
     <ion-nav-view name="tab-chats"></ion-nav-view>
   </ion-tab>
+
+  <!-- Settings Tab -->
+  <ion-tab title="Réglages" icon-off="ion-gear-a" icon-on="ion-gear-a" href="#/tab/account">
+    <ion-nav-view name="tab-add"></ion-nav-view>
+  </ion-tab>
+
 
 </ion-tabs>
