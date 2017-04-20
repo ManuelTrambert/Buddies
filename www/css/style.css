@@ -8,6 +8,10 @@
 .mainDashboardRow div:not(:first-child) {
   margin-top:20px;
 }
+.homePage a{
+  color:white;
+  text-decoration: none;
+}
 .buddiesActivity,.buddiesAvailability, .buddiesEvent, .buddiesMoney{
   height:100px;
   line-height: 95px;

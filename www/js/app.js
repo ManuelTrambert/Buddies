@@ -50,12 +50,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       })
 
-      .state('tab.account', {
-        url: '/account',
+      .state('tab.dash-calendar', {
+        url: '/dash/calendar',
         views: {
-          'tab-account': {
-            templateUrl: 'templates/tab-account.html',
-            controller: 'AccountCtrl'
+          'tab-dash': {
+            templateUrl: 'templates/calendar-availability.html',
+            controller: 'calendarCtrl'
+          }
+        }
+      })
+
+      .state('tab.settings', {
+        url: '/settings',
+        views: {
+          'tab-settings': {
+            templateUrl: 'templates/tab-settings.html',
+            controller: 'SettingsCtrl'
           }
         }
       })
@@ -85,6 +95,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           'tab-events': {
             templateUrl: 'templates/tab-events.html',
             controller: 'EventsCtrl'
+          }
+        }
+      })
+
+      .state('tab.singleEvent', {
+        url: '/events/singleEvent',
+        views: {
+          'tab-events': {
+            templateUrl: 'templates/single-event.html',
+            controller: 'singleEventCtrlEventsCtrl'
+          }
+        }
+      })
+
+      .state('tab.event-detail', {
+        url: '/events/events-this-week',
+        views: {
+          'tab-events': {
+            templateUrl: 'templates/events-this-week.html',
+            controller: 'EventsThisWeekCtrl'
           }
         }
       });
