@@ -130,7 +130,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         views: {
           'tab-events': {
             templateUrl: 'templates/single-event.html',
-            controller: 'singleEventCtrlEventsCtrl'
+            controller: 'singleEventCtrl'
           }
         }
       })
