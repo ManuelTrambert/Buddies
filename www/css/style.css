@@ -7,6 +7,9 @@
 .margin-top-small{
   margin-top: 20px;
 }
+input{
+  -webkit-appearance: none;
+}
 /* DASHBOARD */
 .mainDashboardRow div:not(:first-child) {
   margin-top:20px;
@@ -83,4 +86,14 @@
   margin-left:10px;
   height: auto;
   color:white;
+}
+/* REGISTER */
+.registerPage input{
+  border:1px solid #eee;
+}
+.registerPage .input-group-addon{
+  border:none !important;
+}
+.registerPage .control-label{
+  margin-bottom: 5px;
 }

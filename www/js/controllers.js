@@ -6,6 +6,8 @@ angular.module('starter.controllers', [])
 
 .controller('SignInCtrl', function($scope) {})
 
+.controller('forgotPasswordCtrl', function($scope) {})
+
 .controller('EventsCtrl', function($scope) {})
 
 .controller('singleEventCtrl', function($scope) {})
@@ -35,7 +37,12 @@ angular.module('starter.controllers', [])
   $scope.signIn = function(user) {
     $state.go('tab.dash');
   };
+})
 
+.controller('registerCtrl', function($scope, $state) {
+  $scope.register = function(user) {
+    $state.go('tab.dash');
+  };
 })
 
 .controller('SettingsCtrl', function($scope) {
