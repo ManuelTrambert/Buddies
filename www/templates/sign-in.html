@@ -1,21 +1,36 @@
-<ion-view view-title="Connexion">
+<ion-view view-title="Connexion" class="loginPage">
   <ion-content>
-    <div class="list">
-      <label class="item item-input">
-        <input type="text" placeholder="Pseudo ou email" ng-model="user.username">
-      </label>
-      <label class="item item-input">
-        <input type="password" placeholder="Mot de passe" ng-model="user.password">
-      </label>
-    </div>
-    <div class="padding">
-      <button class="button button-block button-positive" ng-click="signIn(user)">
-        Connexion
-      </button>
-      <p class="text-center margin-top-small">
-        <a class="col-xs-12" href="#/register">Inscription</a>
-        <a class="col-xs-12" href="#/forgot-password">Mot de passe oublié ?</a>
-      </p>
+    <div class="container margin-top-small">
+			<div class="main">
+				<div class="col-xs-12">
+          <img class="logo" src="../img/logo.png">
+					<form class="" method="post" action="#">
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Pseudo ou email</label>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<input type="text" class="form-control" name="name" id="name"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Mot de passe</label>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+								<input type="password" class="form-control" name="password" id="password"/>
+							</div>
+						</div>
+          </form>
+          <div class="padding">
+            <button class="button button-block button-positive" ng-click="signIn(user)">
+              Connexion
+            </button>
+            <p class="text-center margin-top-small">
+              <a class="col-xs-12" href="#/register">Inscription</a>
+              <a class="col-xs-12" href="#/forgot-password">Mot de passe oublié ?</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </ion-content>
 </ion-view>

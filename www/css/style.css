@@ -1,5 +1,10 @@
-/* Empty. Add your own CSS if you like */
 /* GENERAL */
+body,html{
+  height: 100%;
+  width: 100%;
+  padding:0;
+  margin:0;
+}
 .backgroundProperty{
   background-size:100%;
   background-repeat: no-repeat;
@@ -9,7 +14,9 @@
 }
 input{
   -webkit-appearance: none;
+  outline: none;
 }
+
 /* DASHBOARD */
 .mainDashboardRow div:not(:first-child) {
   margin-top:20px;
@@ -33,6 +40,7 @@ input{
 .red{
   background: red;
 }
+
 /* TAB EVENT */
 .mainEventContent{
   padding-top: 20px;
@@ -69,6 +77,7 @@ input{
   right:0;
   margin-top: -1px;
 }
+
 /* DISCUSSION */
 .messageAvatar{
   width: 30px;
@@ -87,6 +96,7 @@ input{
   height: auto;
   color:white;
 }
+
 /* REGISTER */
 .registerPage input{
   border:1px solid #eee;
@@ -96,4 +106,23 @@ input{
 }
 .registerPage .control-label{
   margin-bottom: 5px;
+}
+
+/* LOGIN */
+.loginPage input{
+  border:1px solid #eee;
+}
+.loginPage .input-group-addon{
+  border:none !important;
+}
+.loginPage .control-label{
+  margin-bottom: 5px;
+}
+.loginPage form{
+  margin-top:30px;
+}
+.loginPage .logo{
+  width: 100px;
+  display: block;
+  margin:auto;
 }
