@@ -4,22 +4,22 @@
 .sass-cache
 
 # npm & bower
-/node_modules/
-/app/bower_components/
+node_modules/
+app/bower_components/
 
 # custom gulp settings
 /gulp/.gulp_settings.json
 
 # ionic fonts
-/app/main/assets/fonts/ionicons.*
+app/main/assets/fonts/ionicons.*
 
 # cordova
-/platforms/
-/plugins/
+platforms/
+plugins/
 /res/*/current/
 
 # build folder
-/www/**
+www/**
 
 # IDE
 # sublime
@@ -30,8 +30,8 @@
 /.vscode/
 
 # webstorm
-/.idea/workspace.xml
-/.idea/libraries
+.idea/workspace.xml
+.idea/libraries
 
 # yarn
 yarn.lock
