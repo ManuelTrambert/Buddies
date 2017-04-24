@@ -20,7 +20,7 @@ var Orchestrator = require('orchestrator');
 
 var BASES = {
   android: 'res',
-  ios: 'Vardyger/Resources',
+  ios: 'Buddies/Resources',
   browser: 'www/images'
 };
 var RESOURCE_DIR = 'resources';
