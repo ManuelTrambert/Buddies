@@ -38,3 +38,6 @@ yarn.lock
 
 # npm
 npm-debug.log
+
+#webstorm
+.idea/
