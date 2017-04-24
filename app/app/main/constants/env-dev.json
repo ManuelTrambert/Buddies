@@ -1,0 +1,14 @@
+{
+  "env": "development",
+  "baseUrl" : "http://46.101.80.30:1212",
+  "git_commit" : "",
+  "version" : "",
+  "apiversion": "",
+  "build": "",
+  "proxies": [
+    {
+      "proxyMapFrom": "/api",
+      "proxyMapTo": "http://46.101.80.30:1212/api"
+    }
+  ]
+}

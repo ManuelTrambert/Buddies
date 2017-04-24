@@ -1,0 +1,13 @@
+{
+  "env": "production",
+  "baseUrl" : "https://youzee.api.you2you.fr",
+  "git_commit" : "",
+  "version" : "",
+  "apiversion": "",
+  "proxies": [
+    {
+      "proxyMapFrom": "https://youzee.api.you2you.fr/api",
+      "proxyMapTo": "https://youzee.api.you2you.fr/api"
+    }
+  ]
+}
