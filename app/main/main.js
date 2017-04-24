@@ -14,7 +14,7 @@ angular.module('main', [
     .state('main', {
       url: '/main',
       abstract: true,
-      templateUrl: 'main/templates/tabs.html'
+      templateUrl: 'main/templates/list.html'
     })
       .state('main.list', {
         url: '/list',
