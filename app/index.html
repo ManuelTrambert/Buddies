@@ -12,14 +12,16 @@
   <title>Buddies</title>
 
   <!-- build:css styles/vendor.css -->
+  <script src="https://use.fontawesome.com/1f6413feb9.js"></script>
   <link href="http://code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
-  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
 
   <!-- build:css main/styles/app.css -->
   <!-- inject:css -->
+  <link rel="stylesheet" href="main/styles/buddies.css">
   <link rel="stylesheet" href="main/styles/main.css">
   <!-- endinject -->
   <!-- endbuild -->
@@ -57,8 +59,12 @@ navigation history that also transitions its views in and out.
 <!-- inject:js -->
 <script src="main/main.js"></script>
 <script src="main/services/main-serv.js"></script>
+<script src="main/controllers/settings-ctrl.js"></script>
 <script src="main/controllers/list.ctrl.js"></script>
+<script src="main/controllers/events-ctrl.js"></script>
 <script src="main/controllers/debug-ctrl.js"></script>
+<script src="main/controllers/dashboard-ctrl.js"></script>
+<script src="main/controllers/chat-ctrl.js"></script>
 <script src="main/constants/options.js"></script>
 <script src="main/constants/config-const.js"></script>
 <script src="main/components/mini/mini-component.js"></script>

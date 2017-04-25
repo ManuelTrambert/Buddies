@@ -1,0 +1,182 @@
+/* GENERAL */
+body,html{
+  height: 100%;
+  width: 100%;
+  padding:0;
+  margin:0;
+}
+.noMarginTop{
+  margin-top: 0 !important;
+}
+.backgroundProperty{
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+.backgroundPropertyAvatar{
+  background-size:cover !important;
+  background-repeat: no-repeat !important;
+}
+.margin-top-small{
+  margin-top: 20px;
+}
+input{
+  -webkit-appearance: none;
+  outline: none;
+}
+.appColor{
+  color:#6fafff;
+}
+/* DASHBOARD */
+.mainDashboardRow div:not(:first-child) {
+  margin-top:20px;
+}
+.homePage a{
+  color:white;
+  text-decoration: none;
+}
+.buddiesActivity,.buddiesAvailability, .buddiesEvent, .buddiesMoney{
+  height:100px;
+  line-height: 95px;
+  text-align:center;
+  color:white;
+}
+.green{
+  background:green;
+}
+.blue{
+  background: blue;
+}
+.red{
+  background: red;
+}
+
+/* TAB EVENT */
+.mainEventContent{
+  padding-top: 20px;
+}
+.buttonNewEventContainer{
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+.newEvent{
+  background:#eee;
+  border:none;
+  color:black;
+  padding:10px;
+  border-radius: 3px;
+}
+.singleEvent{
+  border: 1px solid #eee;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+.imgEvent{
+  height:130px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-image:url('../img/foot.jpeg');
+}
+.eventText{
+  padding:10px;
+}
+.dateOnEventCard{
+  background:#eee;
+  padding:10px;
+  position: absolute;
+  right:0;
+  margin-top: -1px;
+}
+/* single event page */
+.theEvent .pictureEvent{
+  height:150px;
+  width: 100%;
+  background-image:url('../img/foot.jpeg');
+}
+.theEvent .actionOnEvent{
+  padding-bottom: 10px;
+}
+.theEvent .actionOnEvent button{
+  border:none;
+  height: 50px;
+  border-bottom: 1px solid #eee;
+}
+.theEvent .actionOnEvent button:first-child{
+  border-right: 1px solid #eee;
+}
+.theEvent hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.theEvent .eventDescription p{
+  padding-left: 15px;
+}
+.eventInfos{
+  padding-top: 10px;
+}
+.dateAndPlace{
+  border-bottom: 1px solid#eee;
+}
+.dateAndPlace p{
+  padding-top: 10px;
+}
+.dateAndPlace p span{
+  font-size: 12px;
+  display: block;
+  color:#666;
+}
+.comingPeople ul{
+  padding-left: 0;
+}
+.comingPeople li{
+  display: inline-block;
+  list-style: none;
+  height: 60px;
+}
+/* DISCUSSION */
+.messageAvatar{
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  margin-top: 5px;
+}
+.messageContent{
+  background: #6FAFFF;
+  border-radius:5px;
+  padding-top: 8px;
+  margin-left:10px;
+  height: auto;
+  color:white;
+}
+
+/* REGISTER */
+.registerPage input{
+  border:1px solid #eee;
+}
+.registerPage .input-group-addon{
+  border:none !important;
+}
+.registerPage .control-label{
+  margin-bottom: 5px;
+}
+
+/* LOGIN */
+.loginPage input{
+  border:1px solid #eee;
+}
+.loginPage .input-group-addon{
+  border:none !important;
+}
+.loginPage .control-label{
+  margin-bottom: 5px;
+}
+.loginPage form{
+  margin-top:30px;
+}
+.loginPage .logo{
+  width: 100px;
+  display: block;
+  margin:auto;
+}
