@@ -3,6 +3,7 @@ angular.module('main', [
   'ionic',
   'ngCordova',
   'ui.router',
+  'main.constant',
   // TODO: load other modules selected during generation
 ])
 .config(function ($stateProvider, $urlRouterProvider) {
@@ -14,14 +15,14 @@ angular.module('main', [
     .state('main', {
       url: '/main',
       abstract: true,
-      templateUrl: 'main/templates/list.html'
+      templateUrl: 'main/templates/tabs.html',
     })
       .state('main.list', {
         url: '/list',
         views: {
           'tab-list': {
             templateUrl: 'main/templates/list.html',
-            // controller: 'SomeCtrl as ctrl'
+            controller: 'ListCtrl'
           }
         }
       })
@@ -31,15 +32,6 @@ angular.module('main', [
           'tab-list': {
             templateUrl: 'main/templates/list-detail.html',
             // controller: 'SomeCtrl as ctrl'
-          }
-        }
-      })
-      .state('main.debug', {
-        url: '/debug',
-        views: {
-          'tab-debug': {
-            templateUrl: 'main/templates/debug.html',
-            controller: 'DebugCtrl as ctrl'
           }
         }
       });
