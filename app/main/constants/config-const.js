@@ -10,7 +10,7 @@ angular.module('main.constant')
       /*inject-env*/
       'env': 'development',
     'baseUrl': 'http://46.101.80.30:1212',
-    'git_commit': '20d4584',
+    'git_commit': '16e9344',
     'version': '1.0.0',
     'apiversion': '',
     'proxies': [

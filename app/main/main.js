@@ -59,8 +59,8 @@ angular.module('main', [
           }
         }
       })
-      .state('main.singleEvent', {
-        url: '/singleEvent',
+      .state('singleEvent', {
+        url: '/events/singleEvent',
         templateUrl: 'main/templates/events/singleEvent.html',
         controller: 'SingleEventCtrl'
       });
@@ -72,11 +72,4 @@ angular.module('main', [
         return StatusBar.hide();
       }
     });
-    /*if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-      StatusBar.show();
-      StatusBar.backgroundColorByName("red");
-    }*/
-
   });
