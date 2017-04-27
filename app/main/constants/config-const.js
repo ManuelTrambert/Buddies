@@ -8,13 +8,15 @@ angular.module('main.constant')
     // gulp environment: injects environment vars
     ENV: {
       /*inject-env*/
-      'env': 'development',
-    'git_commit': 'd35acfb',
+      'env': 'local',
+    'baseUrl': '',
+    'git_commit': '95c2900',
     'version': '1.0.0',
     'apiversion': '',
     'proxies': [
       {
         'proxyMapFrom': '/api',
+        'proxyMapTo': 'http://127.0.0.1:1212/api'
       }
     ]
       /*endinject*/

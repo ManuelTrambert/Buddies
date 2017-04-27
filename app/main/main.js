@@ -15,7 +15,7 @@ angular.module('main', [
       .state('main', {
         url: '/main',
         abstract: true,
-        templateUrl: 'main/templates/tabs.html',
+        templateUrl: 'main/templates/tabs.html'
       })
       .state('login', {
         url: '/login',
@@ -50,6 +50,15 @@ angular.module('main', [
           }
         }
       })
+      .state('main.settings', {
+        url: '/settings',
+        views: {
+          'tab-settings': {
+            templateUrl: 'main/templates/settings/settings.html',
+            controller: 'SettingsCtrl'
+          }
+        }
+      })
       .state('main.events', {
         url: '/events',
         views: {
@@ -60,9 +69,14 @@ angular.module('main', [
         }
       })
       .state('singleEvent', {
-        url: '/events/singleEvent',
-        templateUrl: 'main/templates/events/singleEvent.html',
-        controller: 'SingleEventCtrl'
+        url: '/singleEvent',
+
+        views: {
+          'tab-singleEvent': {
+            templateUrl: 'main/templates/events/singleEvent.html',
+            controller: 'SingleEventCtrl'
+          }
+        }
       });
   })
   .run(function ($ionicPlatform, $rootScope, $state, $window, $cordovaStatusbar) {

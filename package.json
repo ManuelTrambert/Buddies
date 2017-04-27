@@ -58,7 +58,8 @@
       {
         "proxyMapFrom": "/another-proxy",
         "proxyMapTo": "https://echo.getpostman.com"
-      },
+      }
+    ]
   },
   "dependencies": {
     "@ionic-native/core": "^3.5.0",

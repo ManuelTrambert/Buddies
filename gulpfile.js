@@ -50,7 +50,7 @@ if (fs.existsSync('./gulp/.gulp_settings.json')) {
 }
 
 // environment
-options.env = options.env || 'dev';
+options.env = options.env || 'local';
 // print options
 if (defaults && defaults[task]) {
   console.log(chalk.green('defaults for task \'' + task + '\': '), defaults[task]);
