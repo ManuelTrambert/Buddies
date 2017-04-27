@@ -1,0 +1,13 @@
+{
+  "env": "production",
+  "baseUrl" : "",
+  "git_commit" : "",
+  "version" : "",
+  "apiversion": "",
+  "proxies": [
+    {
+      "proxyMapFrom": "",
+      "proxyMapTo": ""
+    }
+  ]
+}

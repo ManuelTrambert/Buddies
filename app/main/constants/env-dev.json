@@ -1,0 +1,14 @@
+{
+  "env": "development",
+  "baseUrl" : "http://localhost:8000",
+  "git_commit" : "",
+  "version" : "",
+  "apiversion": "",
+  "build": "",
+  "proxies": [
+    {
+      "proxyMapFrom": "/api",
+      "proxyMapTo": "http://localhost:8000/api"
+    }
+  ]
+}
