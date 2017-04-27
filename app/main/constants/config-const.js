@@ -9,14 +9,12 @@ angular.module('main.constant')
     ENV: {
       /*inject-env*/
       'env': 'development',
-    'baseUrl': 'http://46.101.80.30:1212',
     'git_commit': 'd35acfb',
     'version': '1.0.0',
     'apiversion': '',
     'proxies': [
       {
         'proxyMapFrom': '/api',
-        'proxyMapTo': 'http://46.101.80.30:1212/api'
       }
     ]
       /*endinject*/
