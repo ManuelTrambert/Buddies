@@ -7,7 +7,7 @@
   "proxies": [
     {
       "proxyMapFrom": "/api",
-      "proxyMapTo": "http://127.0.0.1:1212/api"
+      "proxyMapTo": "http://127.0.0.1:9090/api"
     }
   ]
 }

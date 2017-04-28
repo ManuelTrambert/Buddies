@@ -6,46 +6,42 @@
     </br>
       <div class="main">
         <div class="col-xs-12">
-          <form class="" method="post" action="#">
-            <div class="form-group">
-              <label for="name" class="cols-sm-2 control-label">Nom</label>
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" name="name" id="name"/>
-              </div>
-            </div>
+          <form>
             <div class="form-group">
               <label for="email" class="cols-sm-2 control-label">Email</label>
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" name="email" id="email"  />
+                <input placeholder="Email" ng-model="user.email" type="email" class="form-control text-center" style="font-weight: bold;" name="email" id="email" required/>
               </div>
             </div>
             <div class="form-group">
               <label for="username" class="cols-sm-2 control-label">Pseudo</label>
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" name="username" id="username" />
+                <input placeholder="Username" ng-model="user.username" type="text" class="form-control text-center" style="font-weight: bold;" name="username" id="username" required/>
               </div>
             </div>
             <div class="form-group">
               <label for="password" class="cols-sm-2 control-label">Mot de passe</label>
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                <input type="password" class="form-control" name="password" id="password"/>
+                <input placeholder="Password" ng-model="user.password" type="password" style="font-weight: bold;" class="form-control text-center" name="password" id="password" required/>
               </div>
             </div>
             <div class="form-group">
               <label for="confirm" class="cols-sm-2 control-label">Confirmation du mot de passe</label>
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                <input type="password" class="form-control" name="confirm" id="confirm" />
+                <input ng-model="user.confirmPassword" placeholder="Password confirmation" type="password" class="form-control text-center" style="font-weight: bold;" name="confirm" id="confirm" required/>
               </div>
             </div>
             <div class="padding">
               <button class="button button-block button-positive" ng-click="register(user)">
                 Inscription
               </button>
+            </div>
+            <div ng-show="message" class="text-center">
+              {{message}}
             </div>
           </form>
         </div>

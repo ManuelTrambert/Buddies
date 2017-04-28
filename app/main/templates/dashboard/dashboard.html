@@ -5,15 +5,75 @@
       L'appli pour gérer ton groupe de potes.
     </p>
     <div class="mainDashboardRow">
-      <div class="col-xs-12 buddiesEvent green">
-        <p><a ui-sref="main.events">1 évenement cette semaine</a></p>
+      <div clas="panel panel-primary">
+        <div class="col-xs-12 panel-heading green">
+          <div class="row">
+            <div class="col-xs-3">
+              <i style="color: white;" class="fa fa-fa fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <div style="color: white; font-size: x-large; font-weight: bold;">
+                1
+              </div>
+              <div><a style="font-weight: bold;"> event cette semaine</a></div>
+            </div>
+          </div>
+        </div>
+        <a ui-sref="main.events">
+          <div class="panel-footer">
+            <span class="pull-left" style="color: green; font-weight: bold;">View details</span>
+            <span class="pull-right" style="color: green;"><i class="fa fa-arrow-circle-right"></i></span>
+            <div class="clearfix"></div>
+          </div>
+        </a>
       </div>
-      <div class="col-xs-12 buddiesMoney blue">
+      <div clas="panel panel-primary">
+        <div class="col-xs-12 panel-heading blue">
+          <div class="row">
+            <div class="col-xs-3">
+              <i style="color: white;" class="fa fa-euro fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <div style="color: white; font-size: x-large; font-weight: bold;">
+                3
+              </div>
+              <div><a style="font-weight: bold;"> euros de dettes :(</a></div>
+            </div>
+          </div>
+        </div>
+        <a ui-sref="login">
+          <div class="panel-footer">
+            <span class="pull-left" style="color: blue; font-weight: bold;">View details</span>
+            <span class="pull-right" style="color: blue;"><i class="fa fa-arrow-circle-right"></i></span>
+            <div class="clearfix"></div>
+          </div>
+        </a>
+      </div>
+      <!--<div class="col-xs-12 buddiesMoney blue">
         <p>3 euros à Manu</p>
+      </div>-->
+      <div clas="panel panel-primary">
+        <div class="col-xs-12 panel-heading red">
+          <div class="row">
+            <div class="col-xs-3">
+              <i style="color: white;" class="fa fa-calendar fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="col-xs-9 text-right">
+              <div><a style="font-weight: bold;"> Annonce tes dispos!</a></div>
+            </div>
+          </div>
+        </div>
+        <a ui-sref="login">
+          <div class="panel-footer">
+            <span class="pull-left" style="color: red; font-weight: bold;">Ton calendrier</span>
+            <span class="pull-right" style="color: red;"><i class="fa fa-arrow-circle-right"></i></span>
+            <div class="clearfix"></div>
+          </div>
+        </a>
       </div>
-      <div class="col-xs-12 buddiesAvailability red">
+      <!--<div class="col-xs-12 buddiesAvailability red">
         <p><a>Appuyez pour définir vos dates libres</a></p>
-      </div>
+      </div>-->
     </div>
   </ion-content>
 </ion-view>

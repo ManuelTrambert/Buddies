@@ -9,26 +9,29 @@
               <label for="name" class="cols-sm-2 control-label">Pseudo ou email</label>
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" name="name" id="name"/>
+                <input style="font-weight: bold; padding-left: 2px;" placeholder="Username" ng-model="user.username" type="text" class="form-control" name="name" id="name"/>
               </div>
             </div>
             <div class="form-group">
               <label for="password" class="cols-sm-2 control-label">Mot de passe</label>
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                <input type="password" class="form-control" name="password" id="password"/>
+                <input style="font-weight: bold; padding-left: 2px;" placeholder="Password" ng-model="user.password" type="password" class="form-control" name="password" id="password"/>
               </div>
             </div>
           </form>
           <div class="padding">
-            <button class="button button-block button-positive" ui-sref="main.dashboard" ng-click="signIn(user)">
+            <button class="button button-block button-positive" ng-click="signIn(user)">
               Connexion
             </button>
-            <p class="text-center margin-top-small">
-              <a class="col-xs-12" ui-sref="register">Inscription</a>
-              <a class="col-xs-12" ui-sref="forgotPassword">Mot de passe oublié ?</a>
-            </p>
           </div>
+          <div ng-show="message">
+            {{ message }}
+          </div>
+          <ul style="padding-top: 20px;" class="text-center margin-top-small">
+            <a ui-sref="register"><label class="col-xs-12">Inscription</label></a>
+            <a><label style="padding-top: 20px;" class="col-xs-12" ui-sref="forgotPassword">Mot de passe oublié ?</label></a>
+          </ul>
         </div>
       </div>
     </div>

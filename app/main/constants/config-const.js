@@ -10,13 +10,13 @@ angular.module('main.constant')
       /*inject-env*/
       'env': 'local',
     'baseUrl': '',
-    'git_commit': '95c2900',
+    'git_commit': 'f4a7839',
     'version': '1.0.0',
     'apiversion': '',
     'proxies': [
       {
         'proxyMapFrom': '/api',
-        'proxyMapTo': 'http://127.0.0.1:1212/api'
+        'proxyMapTo': 'http://127.0.0.1:9090/api'
       }
     ]
       /*endinject*/
